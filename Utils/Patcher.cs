@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HarmonyLib;
 
-namespace TABG_Hack.Utils
+namespace AdCap_Hack.Utils
 {
 	class Patcher
 	{

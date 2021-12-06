@@ -1,5 +1,5 @@
-﻿using TABG_Hack.Scripts;
-using TABG_Hack.Utils;
+﻿using AdCap_Hack.Scripts;
+using AdCap_Hack.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace TABG_Hack
+namespace AdCap_Hack
 {
 	class Loader
 	{
@@ -37,7 +37,7 @@ namespace TABG_Hack
 		public static void Init()
 		{
 			Application.runInBackground = true;
-			Loader._load = new GameObject("TABG_Hack");
+			Loader._load = new GameObject("AdCap_Hack");
 			Loader.Load.transform.parent = null;
 			Transform root = Loader.Load.transform.root;
 			if (root != null && root.gameObject != Loader.Load)

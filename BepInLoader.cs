@@ -4,9 +4,9 @@ using System.Reflection;
 using System.Collections;
 using BepInEx;
 
-namespace TABG_Hack
+namespace AdCap_Hack
 {
-    [BepInPlugin("TABG_Hack", "TABG Hack", "1.0.0")]
+    [BepInPlugin("AdCap_Hack", "TABG Hack", "1.0.0")]
     public class BepInLoader : BaseUnityPlugin
     {
         public static BepInLoader instance;

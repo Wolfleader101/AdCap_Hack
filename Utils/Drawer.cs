@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace TABG_Hack.Utils
+namespace AdCap_Hack.Utils
 {
 	class Drawer
 	{

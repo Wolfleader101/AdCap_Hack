@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace TABG_Hack.Utils
+namespace AdCap_Hack.Utils
 {
 	static class ObjectFinder
 	{

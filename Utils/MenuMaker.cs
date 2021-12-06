@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 
-namespace TABG_Hack.Utils
+namespace AdCap_Hack.Utils
 {
 	class MenuMaker
 	{

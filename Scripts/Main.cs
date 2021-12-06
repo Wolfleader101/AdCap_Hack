@@ -1,10 +1,10 @@
-﻿using TABG_Hack.Utils;
+﻿using AdCap_Hack.Utils;
 using UnityEngine;
 using System.Collections;
 using HarmonyLib;
 using System.Collections.Generic;
 
-namespace TABG_Hack.Scripts
+namespace AdCap_Hack.Scripts
 {
 	class Main : MonoBehaviour
 	{
@@ -19,7 +19,6 @@ namespace TABG_Hack.Scripts
 		void Start()
 		{
 			AddScripts();
-
 
 			//mainCam = Camera.main;
 		}
@@ -56,12 +55,18 @@ namespace TABG_Hack.Scripts
 		{
 			List<MonoBehaviour> compList = new List<MonoBehaviour>();
 			//this.gameObject.AddComponent<SharkHack>();
-			this.gameObject.AddComponent<EntityESP>();
-			this.gameObject.GetComponents<MonoBehaviour>(compList);
+			//this.gameObject.AddComponent<EntityESP>();
+			this.gameObject.AddComponent<Hacks>();
 			foreach (Component comp in compList)
 			{
 				Debug.LogError($"{comp.GetType().Name} Initialized");
 			}
+		}
+
+		void Update()
+		{
+			var hacks = this.gameObject.GetComponent<Hacks>();
+			hacks.hackable = true;
 		}
 
 		//		private void HandleInput()
